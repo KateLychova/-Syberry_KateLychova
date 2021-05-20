@@ -21,3 +21,165 @@ Actual result: average score is duplicated
 Expected result: average score is 0
 
 
+
+ID:15
+Summary:  Status:413 Request Entity Too Large when username- valid max  characters length  and strict: false in body request 
+
+Severity (Critical, Major, Medium, Minor): Medium
+Description: Search request when username- valid max  characters length, server is not able to process and display Status:413 Request Entity Too Large
+Reproducibility: always
+Workaround:
+
+Steps to reproduce:
+1.Choose method Post
+2. Paste Url: http://178.124.206.52/app/ws/
+3. Choose content-Type: application/json
+4.Paste in Body:
+{"user»: rangaradjangoo",
+"strict”: false}
+5.Click [Send] button
+
+Actual result: Status:413 Request Entity Too Large
+
+Expected result: Status:200 OK
+Operation status code: 0
+All users by partial  username are listed with the following attributes:"id","username","realname","password" and "email"
+
+
+
+
+ID:16
+Summary: system crash after clicking “About WordPad” in “Help” in WordPad
+
+Severity (Critical, Major, Medium, Minor):Major
+Description: Application closes after clicking [Help] in the header and then [About WordPad]
+Reproducibility: always
+Reproduced on: Win 10 
+
+Steps to reproduce:
+1.Open WordPad
+2.Click “Help” in the header
+3.Click “About WordPad”
+
+
+Actual result: system crash
+
+Expected result: “Information about WordPad” is displayed 
+
+
+
+ID:3 
+Summary:Button[Минск] is disabled in the footer of IT-Академия application
+ 
+Severity (Critical, Major, Medium, Minor):Medium
+Description:It is impossible to click the [Минск] button in the footer of IT-Академия application, it is disabled for use.
+
+Reproducibility: always
+Reproduced on: Win10,Yandex,Mozilla Firefox,Opera Version, Lenovo TB-X303L,IpadPro,iPhone 6
+Workaround: Click “Минск” in list box”Выберете город”
+ 
+Steps to reproduce:
+1.Open https://www.it-academy.by/
+2.Click “Гродно” in list box “Выберите город”
+3. Click[Минск] button in the footer
+
+ 
+Actual result:IT-Академия в гродно is displayed
+
+ 
+Expected result: It-Академия в Минске is displayed
+ 
+
+
+ID:6 
+Summary:Error is not displayed after entering  invalid data in fields of form “Записаться на курс” in It Академия application
+
+ 
+Severity (Critical, Major, Medium, Minor): Medium
+Description:After entering invalid data in fields of form “Записаться на курс” in It Академия application error is not displayed
+Reproducibility: always
+Reproduced on: Google Chrome ,Yandex,Mozilla Firefox,Opera version, LenovoTB-X303L iPhone 6,Ipad Pro,Samsung A51
+Workaround:
+Steps to reproduce:
+1.Open page: https://www.it-academy.by/course/software-testing-engineer/st1-funktsionalnoe-testirovanie-po/ 
+2 Click on the [Записаться] button
+3. fill in the fields "Имя"(2 Cyrillic characters for exemple "Ян")
+4. fill in the field "Фамилия" ( 7 Cyrillic characters for example " Бородов")
+5. fill in the field ”Отчество” (max.15 Cyrillic characters for example "Блаблаблабвович")
+6. fill in the field "Дата рождения" (format: date-month-year (approx. 01 01 2001 without spaces)
+7. Fill in the field "телефон" (+375257950928).
+8. Fill in the field "сообщение"(max.+1 1025 valid character)
+9. Fill in the field "E-Mail"(ilau@mail.ru)
+10. Click ListBox “Выберете ваш регион проживания” 
+11. Click in Drop-down list “Минск и Минская область”
+12. Click [Отправить].
+ 
+Actual result: “Ваша заявка отправлена успешно” is displayed
+
+ 
+Expected result: Error is displayed
+
+
+
+ID:4 
+
+Summary: Page “Карта сайта” is not opened   when“Гродно,Гомель,Могилев,Брест,Витебск” is selected in list box “Выберете город”of IT-Academy application
+ 
+Severity (Critical, Major, Medium, Minor):Minor
+Description:it is impossible to open page “Карта сайта” when Гродно,Гомель,Могилев,Брест,Витебск” is selected in list box “Выберете город” at the top of home page  IT-Academy application
+Reproducibility: always
+Reproduced on: Win10, Lenovo TB-X303L, Yandex, iPhone 6
+
+Workaround: 
+Select “Минск” in the list box  “Выберете город” at the top of home page  IT-Academy application
+Steps to reproduce:
+1.Open https://www.it-academy.by/
+2.Click “Гродно” in list box “Выберите город”
+3. Click[Карта сайта] button in the footer
+
+ 
+Actual result: IT-Академия в Гродно is displayed
+
+ 
+Expected result: Page “Карта сайта” is opened
+
+
+
+ID:8
+Summary: Note is not deleted from note page after clicking delete button
+
+Severity (Critical, Major, Medium, Minor):Medium
+Description: After clicking delete button from note window  note is  not deleted from home page
+Reproducibility: always
+Reproduced on: Lenovo Tab 4 Android 7.1.1
+
+Steps to reproduce:
+1.Create any note
+2.Click on it from home page
+3.Click delete button
+
+
+Actual result: Note is deleted
+
+Expected result: Note is not deleted from main page
+
+
+ID:11
+Summary: New empty note is created after clicking  back on device from notes page
+
+Severity (Critical, Major, Medium, Minor):Medium
+Description: After clicking back on device from note window new empty note is created at home page
+Reproducibility: always
+Reproduced on: Lenovo Tab 4 Android 7.1.1
+
+Steps to reproduce:
+1.Click [new note] button at the top of home page
+2.Click back on device
+
+
+Actual result: New empty note is created at home page
+
+Expected result: New empty note is  not  created
+
+
+
