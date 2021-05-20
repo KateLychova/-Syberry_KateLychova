@@ -1,0 +1,23 @@
+ID:23
+Summary: After adding  a new league with an existing name average score duplicated from the first league
+
+Severity (Critical, Major, Medium, Minor):Minor
+Description: Average score is duplicated in new league with existing name of leagues
+ 
+Requirement ID:56
+Reproducibility: always
+Reproduced on: Android 10
+
+Steps to reproduce:
+1.Open QA Battle Score
+2.Click [Add League]
+3.Enter any league name
+4.Click [add game]
+5.Enter any game score
+6. Click [Add League]
+7.Enter the same league name
+Actual result: average score is duplicated
+
+Expected result: average score is 0
+
+
