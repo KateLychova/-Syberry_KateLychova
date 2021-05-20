@@ -1,33 +1,58 @@
 ID    Priority    Req    Module      Checklist
-1     s           11     LogIn       Verify users account is opened via entering min valid data in 'Email or phone number' field and min valid  data in 'password' field and pressing [Log In] button
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1     s           11     LogIn       Verify users account is opened via entering min valid data in 'Email or phone number' field and min valid  data in 'password' field 
+                                     and pressing [Log In] button
+2     s           12	   Login	     Verify users account is opened via entering max valid data in 'Email or phone number' field and max valid  data in 'password' field
+                                     and pressing [Log In] button
+3     c           13     LogIn       Verify message"The email or mobile number you entered isn’t connected to an account. Find your account and log in." via entering min-1
+                                     valid data in 'Email or phone number' field and min valid  data in 'password' field and pressing [Log In] button
+4     c         	14	   LogIn       Verify message"The email or mobile number you entered isn’t connected to an account. Find your account and log in." via entering max+1  
+                                     valid data in 'Email or phone number' field and min valid  data in 'password' field and pressing [Log In] button 
+5     c           15     LogIn       Verify message"The password you’ve entered is incorrect. Forgot Password?" via entering min  valid data in 'Email or phone number' field
+                                     and min -1 valid  data in 'password' field and pressing [Log In] button  
+6     c           16     LogIn       Verify message"The password you’ve entered is incorrect. Forgot Password?" via entering min  valid data in 'Email or phone number' field 
+                                     and max+1 valid  data in 'password' field and pressing [Log In] button    
+7     s           17     LogIn       Verify message"The password you’ve entered is incorrect. Forgot Password?" via entering middle  valid data in 'Email or phone number' field 
+                                     and  invalid  data in 'password' field and pressing [Log In] button
+8     s           18     LogIn       Verify message"The email or mobile number you entered isn’t connected to an account. Find your account and log in." via entering  
+                                     invalid data in 'Email or phone number' field and middle valid  data in 'password' field and pressing [Log In] button 
+9     c           19     LogIn       Verify message"The email you entered isn’t connected to an account. Create a new Facebook account." is displayed via enterig  data of 
+                                     inactive user in fields and clicking [Log In] button  
+10    c           20     LogIn       Verify message "The email or mobile number you entered isn’t connected to an account. Find your account and log in." is displayed via 
+                                     leaving fields blank and clicking [Log In ] button 
+11    c           21     LogIn       Verify password is visiable via entering any password and clicking[eye] button
+12    c           22     LogIn       Verify users account is opened via copy paste middle valid data in 'Email or phone number' field and middle valid  data in 'password' field
+                                     and pressing  enter
+13    s           23     LogIn       Verify users account is opened via entering min valid data in 'Email or phone number' field and min valid  data in 'password' field and pressing
+                                      [Log In] button after password had been changed  
+14    e           24     LogIn       Verify message"The email or mobile number you entered isn’t connected to an account. Find your account and log in."  sql script 'Email or phone 
+                                      number' field and min valid  data in 'password' field and pressing [Log In] button  
+15    s           25     Forgot password	Verify window"Find Your Account" is opened via clicking link 'Forgot password' after leaving fields with email and password blank
+16    s           26     Forgot password	Verify window "Reset your pasword" is opened via entering min valid data in search field and clicking [search] button
+17    s           27     Forgot password	Verify window "Reset your pasword" is opened via entering max valid data in search field and pressing enter
+18    c           28     Forgot password	Verify mistake"No such result " is displayed is opend via entering min-1 valid data in search field and clicking [search] button
+19    c           29     Forgot password	Verify mistake"No such result " is displayed is opend via entering max+1 valid data in search field and clicking [search] button
+20    c           30     Forgot password	Verify mistake"No such result " is displayed is opend via entering invalid data in search field and clicking [search] button
+21    c           31     Forgot password	Verify user retuns to privious page after clicking[cancel] button 
+22    e           32     Forgot password	Verify mistake"No such result " is displayed is opend via entering sql-script in search field and clicking [search] button
+23    s           33     Forgot password	Verify window"Enter security code" is displayed via chossing 'send code via email' radiobutton and clicking[continue] button and code is sent
+24    s           34     Forgot password	Verify window"Enter security code" is displayed via chossing 'send code via sms' radiobutton and clicking[continue] button and code is sent
+25    c           35     Forgot password	Verify window "Find your account"is opened via clicking l[Not You] button on reset your password window
+26    s           36     Forgot password	Verify window "Change password " is opened after entering secure code and click [continue] button
+27    s           37     Sing up          Verify "Sing up" window is displayed via clicking [Create New Account] button
+28    s           38     Sing up	        Verify window"Enter your code from email" is displayed via entiring valid data  in 'First Name' field,'Last Name' field, valid email
+                                          in 'Mobile number or email' field,'New password' field,choossing valid birthday and any gender and clicking [Sing up] button and code is sent
+29    s           39     Sing up	        Verify window"Enter your code from sms" is displayed via entiring valid data  in 'First Name' field,'Last Name' field, valid phone number
+                                          in 'Mobile number or email' field,'New password' field,choossing valid birthday and any gender and clicking [Sing up] button and code is sent
+30    c           40     Sing up	        Verify field is red and error message is displayed via leaving any of  mantadory fields blank
+31    c           41     Sing up	        Verify error message is displayed via entering different email in 're-enter email' field
+32    c           42     Sing up	        Verify field is red and error message is displayed via entering invalid data in any mantadory field
+33    c           43     Sing up	        Verify birtday field is red after choosing invalid date 
+34    c           44     Sing up	        Verify 'Please choose a more secure password. It should be longer than 6 characters, unique to you, and difficult for others to guess.'
+                                          is displayed via entering weak password
+35    c           45     Sing up	        Verify drop-down list'Select your pronoun' and 'Gender(optional)' are displayed via choossing [custom] radio button
+36    c           46     Sing up	        Verify "The phone number you're trying to verify was recently used to verify a different account. Please try a different number" 
+                                          is displayed via entering recently used phone number
+37    s           47     Sing up	        Verify account is created via entering code from sms  and clicking continue button
+38    s           48     Sing up	        Verify account is created via entering code from email  and clicking continue button
+39    s           49    Sing up	        Verify window"Add number or email" is opened via clicking [Update contact info] button
+  
